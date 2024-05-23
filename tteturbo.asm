@@ -491,7 +491,9 @@ td_motoron:
 ; The drive stays selected.
 ; a2 = CIAAPRA
 ; a3 = CIABPRB
-       moveq      #$7d,d1
+       move.b     (a3),d1
+       and.b      #1<<DSKSIDE,d1                                        ; save current disk side
+       or.b       #$79,d1                                               ; $7d
        move.b     d1,(a3)
        bclr       #3,d1
        move.b     d1,(a3)

@@ -7,6 +7,6 @@ Amiga 68000 assembly hardware banging track loaders.
 A single buffer byte loader with integrated ZX0 unpacking.
 
 ## TTETurbo
-A double buffered byte loader with integrated ZX0 unpacking.
+A double buffered byte loader with integrated ZX0 unpacking. Guess what, this one is faster.
 
 Read source for info / useage.
